@@ -12,7 +12,7 @@ import UnfinishedGame from '../components/UnfinishedGame';
 import './Start.scss';
 
 const Start = () => {
-    const { gameSize, seqNeeded, getPlayerNames, playerNames, round, drawFirstPlayer } = useContext(PlayerContext);
+    const { gameSize, seqNeeded, getPlayerNames, round, drawFirstPlayer } = useContext(PlayerContext);
 
     const [inputs, setInputs] = useState({
         player1: {

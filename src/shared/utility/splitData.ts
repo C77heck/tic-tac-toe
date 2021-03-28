@@ -81,31 +81,31 @@ export const splitDiagonalLeft = (numbArr: number[], gameSize: number, clickedCe
         seven2: []
     }
     numbArr.forEach(i => {
-        if ((i === arrDist) || (i % arrDist === 0) && (arrDist * gameSize > i)) {
+        if ((i === arrDist) || ((i % arrDist === 0) && (arrDist * gameSize > i))) {
             a.zero.push(i);
-        } else if (i === 1 || (i % arrDist === 1) && (arrDist * gameSize + 2 > i)) {
+        } else if (i === 1 || ((i % arrDist === 1) && (arrDist * gameSize + 2 > i))) {
             a.one.push(i);
-        } else if (i === 3 || (i % arrDist === 3) && (gameSize * 3 > i)) {
+        } else if (i === 3 || ((i % arrDist === 3) && (gameSize * 3 > i))) {
             a.three.push(i);
-        } else if (i === 4 || (i % arrDist === 4) && (gameSize * 4 > i)) {
+        } else if (i === 4 || ((i % arrDist === 4) && (gameSize * 4 > i))) {
             a.four.push(i);
-        } else if (i === 5 || (i % arrDist === 5) && (gameSize * 5 > i)) {
+        } else if (i === 5 || ((i % arrDist === 5) && (gameSize * 5 > i))) {
             a.five.push(i);
-        } else if (i === 6 || (i % arrDist === 6) && (gameSize * 6 > i)) {
+        } else if (i === 6 || ((i % arrDist === 6) && (gameSize * 6 > i))) {
             a.six.push(i);
-        } else if (i === 7 || (i % arrDist === 7) && (gameSize * 7 > i)) {
+        } else if (i === 7 || ((i % arrDist === 7) && (gameSize * 7 > i))) {
             a.seven.push(i);
-        } else if (i === (gameSize * 2) || (i % arrDist === 2) && (i > gameSize * 2)) {
+        } else if (i === (gameSize * 2) || ((i % arrDist === 2) && (i > gameSize * 2))) {
             a.two2.push(i);
-        } else if (i === (gameSize * 3) || (i % arrDist === 3) && (i > gameSize * 3)) {
+        } else if (i === (gameSize * 3) || ((i % arrDist === 3) && (i > gameSize * 3))) {
             a.three2.push(i);
-        } else if (i === gameSize * 4 || i % arrDist === 4 && (i > gameSize * 4)) {
+        } else if (i === gameSize * 4 || ((i % arrDist === 4) && (i > gameSize * 4))) {
             a.four2.push(i);
-        } else if ((i === gameSize * 5) || (i % arrDist === 5) && (i > gameSize * 5)) {
+        } else if ((i === gameSize * 5) || ((i % arrDist === 5) && (i > gameSize * 5))) {
             a.five2.push(i);
-        } else if ((i === gameSize * 6) || (i % arrDist === 6) && (i > gameSize * 6)) {
+        } else if ((i === gameSize * 6) || ((i % arrDist === 6) && (i > gameSize * 6))) {
             a.six2.push(i);
-        } else if ((i === gameSize * 7) || (i % arrDist === 7) && (i > gameSize * 7)) {
+        } else if ((i === gameSize * 7) || ((i % arrDist === 7) && (i > gameSize * 7))) {
             a.seven2.push(i);
         }
     })
@@ -175,19 +175,19 @@ export const splitDiagonaRight = (numbArr: number[], gameSize: number, clickedCe
             a.one.push(i);
         } else if ((i === 2) || (i % arrDist === 2)) {
             a.two.push(i);
-        } else if ((i === 3) || (i % arrDist === 3) && (gameSize * (gameSize - 1) > i)) {
+        } else if ((i === 3) || ((i % arrDist === 3) && (gameSize * (gameSize - 1) > i))) {
             a.three.push(i);
-        } else if ((i === 4) || (i % arrDist === 4) && (gameSize * (gameSize - 2) > i)) {
+        } else if ((i === 4) || ((i % arrDist === 4) && (gameSize * (gameSize - 2) > i))) {
             a.four.push(i);
-        } else if ((i === 5) || (i % arrDist === 5) && (gameSize * (gameSize - 3) > i)) {
+        } else if ((i === 5) || ((i % arrDist === 5) && (gameSize * (gameSize - 3) > i))) {
             a.five.push(i);
-        } else if ((i === 6) || (i % arrDist === 6) && (gameSize * (gameSize - 4) > i)) {
+        } else if ((i === 6) || ((i % arrDist === 6) && (gameSize * (gameSize - 4) > i))) {
             a.six.push(i);
-        } else if ((i === 7) || (i % arrDist === 7) && (gameSize * (gameSize - 5) > i)) {// perhaps swap the operator
+        } else if ((i === 7) || ((i % arrDist === 7) && (gameSize * (gameSize - 5) > i))) {
             a.seven.push(i);
-        } else if ((i === 8) || (i % arrDist === 8) && (gameSize * (gameSize - 4) > i)) {
+        } else if ((i === 8) || ((i % arrDist === 8) && (gameSize * (gameSize - 4) > i))) {
             a.eight.push(i);
-        } else if ((i === 9) || (i % arrDist === 9) && (gameSize * (gameSize - 3) > i)) {
+        } else if ((i === 9) || ((i % arrDist === 9) && (gameSize * (gameSize - 3) > i))) {
             a.nine.push(i);
         } else if ((i % arrDist === 5) && (gameSize * (gameSize - 3) < i)) {
             a.five2.push(i);

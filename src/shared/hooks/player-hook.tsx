@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect } from 'react';
-import { diagonalLeftWin, diagonalRightWin, horizontalWin, verticalWin, checkIsWon } from '../utility/isWon';
+import { useState, useCallback } from 'react';
+import { checkIsWon } from '../utility/isWon';
 import { splitColumn, splitDiagonalLeft, splitDiagonaRight, splitRow } from '../utility/splitData';
 
 
