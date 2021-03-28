@@ -1,0 +1,64 @@
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.btn-size {
+    outline: none;
+    border: 2px solid rgb(54, 192, 77);
+    border-radius: 0.5rem;
+    color: rgb(54, 191, 77);
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    transition: all 220ms;
+    &:disabled {
+        border: 2px solid rgb(110, 110, 110);
+        background-color: rgb(226, 226, 226);
+        color: rgb(110, 110, 110);
+        &:hover {
+            border: 2px solid rgb(110, 110, 110);
+            background-color: rgb(226, 226, 226);
+            color: rgb(110, 110, 110);
+        }
+    }
+    &:hover {
+        background-color: rgb(114, 226, 129);
+        color: rgb(255, 255, 255);
+    }
+    &:active {
+        background-color: rgb(54, 191, 77);
+        color: rgb(255, 255, 255);
+    }
+    &--clicked {
+        background-color: rgb(54, 191, 77);
+        color: rgb(255, 255, 255);
+    }
+    /* sequnce buttons */
+    &--seq {
+        border: 2px solid rgb(57, 160, 207);
+        color: rgb(57, 160, 207);
+        &:hover {
+            background-color: rgb(129, 178, 201);
+            color: rgb(255, 255, 255);
+        }
+        &:active {
+            background-color: rgb(57, 160, 207);
+            color: rgb(255, 255, 255);
+        }
+        &--clicked {
+            background-color: rgb(57, 160, 207);
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.pick-size {
+    margin: 0.2rem auto 1rem;
+    font-weight: bold;
+}
+
+.incompatible {
+    background-color: red;
+}

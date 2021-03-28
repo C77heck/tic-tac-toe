@@ -1,0 +1,46 @@
+@import "../../sass/variables";
+
+.unfinished-modal {
+    width: 40vw;
+    left: 30vw;
+    color: var(--color-primary);
+    background-color: var(--color-text-darker);
+
+    & .modal__header {
+        background-color: var(--color-primary);
+    }
+    @media screen and (max-width: $tablet) {
+        width: 60vw;
+        left: 20vw;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 84vw;
+        left: 8vw;
+        font-size: 1.5rem;
+    }
+    & .btn-group {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 3rem auto -1rem;
+    }
+    & button {
+        width: 10rem;
+        height: 5rem;
+        outline: none;
+        border: transparent;
+        background-color: var(--color-primary-light);
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-radius: 0.5rem;
+        transition: all 250ms;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color-primary);
+        }
+        &:active {
+            background-color: var(--color-primary-light);
+        }
+    }
+}

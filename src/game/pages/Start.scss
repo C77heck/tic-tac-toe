@@ -1,0 +1,79 @@
+@import "../../sass/variables";
+
+.landing {
+    background-color: rgb(215, 221, 124);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__start {
+        font-size: 10rem;
+        font-weight: bolder;
+        cursor: pointer;
+        color: rgb(235, 100, 22);
+        letter-spacing: 1rem;
+        @media screen and (max-width: $mobile-sm) {
+            letter-spacing: 0.6rem;
+            font-size: 6rem;
+        }
+    }
+    & h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bolder;
+        color: rgb(63, 207, 63);
+        letter-spacing: 0;
+        @media screen and (max-width: $mobile-sm) {
+            letter-spacing: 0.2rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+.start-modal {
+    width: 30vw;
+    left: 35vw;
+    @media screen and (max-width: $tablet-lg) {
+        width: 45vw;
+        left: 27.5vw;
+    }
+    @media screen and (max-width: $tablet-xsm) {
+        width: 65vw;
+        left: 17.5vw;
+    }
+    @media screen and (max-width: $mobile-sm) {
+        width: 86vw;
+        left: 7vw;
+    }
+    & header {
+        background-color: rgb(52, 156, 52);
+    }
+    & input {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.btn--lets-play {
+    margin: 2.5rem auto 0;
+    outline: none;
+    border-color: transparent;
+    background-color: rgb(52, 156, 52);
+    color: white;
+    font-weight: bold;
+    width: 10rem;
+    height: 4.5rem;
+    transition: all 250ms;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(81, 156, 81);
+    }
+    &:active {
+        transform: translateY(1.5px);
+    }
+    &:disabled {
+        background-color: grey;
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+    // COLOURS
+    --color-primary: #11698e;
+    --color-primary-light: #19456b;
+    --color-primary-dark: #1c5043;
+    --color-border-light: #138d64;
+    --color-text-darker: rgb(238, 229, 229);
+
+    --color-overlay: rgba(177, 171, 171, 0.274);
+
+    --color-draw1: rgb(32, 120, 202);
+    --color-draw1-ligter: rgb(73, 162, 214);
+
+    --color-draw2: rgb(228, 103, 54);
+    --color-draw2-ligter: rgb(206, 155, 62);
+
+    --color-draw-link: #f2c627;
+    --color-draw-background: rgb(196, 196, 196);
+
+    --color-ranking: #dee0b8;
+
+    --color-spinner-light: #e1551e;
+    --color-spinner-dark: #175633;
+}
+
+// @MEDIA
+$desktop-lg: 112.5em; // 1800
+$desktop: 100em; // 1600
+$desktop-sm: 90em; // 1440
+$tablet-land: 75em; // 1200
+$tablet-lg: 68.75em; // 1100
+$tablet: 56.25em; // 900
+$tablet-sm: 48.5em; //776
+$tablet-xsm: 39.375em; //630
+$mobile: 37.5em; // 600
+$mobile-sm: 31.25em; // 500
+$mobile-extra-sm: 24em; // 360

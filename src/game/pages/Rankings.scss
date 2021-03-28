@@ -1,0 +1,82 @@
+@import "../../sass/variables";
+
+.ranking {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: var(--color-ranking);
+    justify-content: center;
+    text-align: center;
+    &__score-board {
+        align-self: center;
+        width: 30vw;
+        left: 35vw;
+        font-size: 2.5rem;
+        @media screen and (max-width: $desktop-sm) {
+            width: 40vw;
+            left: 30vw;
+        }
+        @media screen and (max-width: $tablet-lg) {
+            width: 50vw;
+            left: 25vw;
+        }
+        @media screen and (max-width: $tablet-sm) {
+            width: 70vw;
+            left: 15vw;
+        }
+        @media screen and (max-width: $mobile) {
+            width: 90vw;
+            left: 5vw;
+            font-size: 1.5rem;
+        }
+    }
+    & div a,
+    & div a:link,
+    & div a:visited {
+        text-decoration: none;
+        color: white;
+        border: 2px solid rgb(71, 194, 67);
+        background-color: rgb(71, 194, 67);
+        display: inline-block;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        font-size: 2.3rem;
+        opacity: 0;
+        animation: appear 1500ms 1 forwards;
+        &:hover {
+            background-color: rgb(119, 212, 116);
+        }
+        &:active {
+            background-color: rgb(20, 138, 16);
+        }
+    }
+    &__buttons {
+        display: flex;
+        & button {
+            flex-basis: 50%;
+            outline: none;
+            background-color: white;
+            height: 4rem;
+            font-size: 2rem;
+            font-weight: bold;
+            border: 3px solid #5597bb;
+            color: #5597bb;
+            cursor: pointer;
+            margin-top: 3rem;
+            transition: all 300ms;
+            @media screen and (max-width: $mobile) {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                background-color: #5597bb;
+                color: white;
+            }
+            &:active {
+                border: 3px solid #ffffff;
+                background-color: #134e6e;
+                color: white;
+            }
+        }
+    }
+}

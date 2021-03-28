@@ -1,0 +1,38 @@
+@import "../../sass/variables";
+
+.game-over {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(97, 95, 95, 0.603);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1000;
+    & h1 {
+        text-align: center;
+        margin-bottom: 7rem;
+        font-size: 4.56rem;
+        color: #4877cd;
+        @media screen and (max-width: $mobile) {
+            font-size: 3rem;
+        }
+    }
+
+    & a,
+    a:link,
+    & a:visited {
+        text-decoration: none;
+        color: #eb6416;
+        font-size: 7rem;
+        font-weight: bolder;
+        align-self: center;
+        animation: 1250ms linear 0s infinite normal none running throb;
+        @media screen and (max-width: $tablet-sm) {
+            font-size: 5rem;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 3rem;
+        }
+    }
+}

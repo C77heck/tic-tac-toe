@@ -1,0 +1,66 @@
+/* INPUT VALIDATION */
+input:focus {
+    outline: none;
+}
+.input-control {
+    margin: 1rem 0;
+}
+
+.input-control label,
+.input-control input {
+    display: block;
+}
+
+.input-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input-control input {
+    width: 100%;
+    font: inherit;
+    border: 1px solid rgb(160, 157, 157);
+    background: #f8f8f8;
+    padding: 0.15rem 0.25rem;
+    transition: all 250ms;
+    border-bottom: 3px solid #b9b9b9;
+    &:focus {
+        background: #ebebeb;
+        border-bottom: 3px solid #06f119c7;
+    }
+}
+
+.input-control--invalid label:focus,
+.input-control--invalid p:focus {
+    color: rgb(22, 22, 22);
+}
+
+.input-control--invalid label,
+.input-control--invalid p {
+    color: rgb(180, 42, 42);
+}
+
+.input-control--invalid input {
+    border-bottom: 3px solid #f50e0ec7;
+}
+
+.error-text {
+    max-height: 1.2rem;
+    min-height: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.error-text p {
+    font-size: 0.8rem;
+    margin: 0;
+    position: absolute;
+    padding-top: 1px;
+}
+
+@media (max-width: 700px) {
+    .error-text p {
+        font-size: 0.9rem;
+        position: static;
+    }
+}

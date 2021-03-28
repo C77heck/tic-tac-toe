@@ -1,0 +1,86 @@
+.animation-overlay {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-overlay);
+    position: absolute;
+    z-index: 10000;
+}
+
+.draw1 {
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--color-draw-background);
+    border: 5px double var(--color-draw1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    backface-visibility: hidden;
+    &__inner {
+        background-color: var(--color-draw1);
+        border: 2px solid var(--color-draw1-lighter);
+        border-radius: 50%;
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & h2 {
+            align-self: center;
+            font-size: 4rem;
+            color: white;
+            font-weight: bolder;
+        }
+        & h3 {
+            font-size: 2.5rem;
+            color: var(--color-draw-link);
+            text-align: center;
+            opacity: 0;
+            animation: appear 200ms 1 forwards;
+            animation-delay: 2800ms;
+        }
+    }
+}
+
+.draw2 {
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--color-draw-background);
+    border: 5px double var(--color-draw2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    backface-visibility: hidden;
+    &__inner {
+        background-color: var(--color-draw2);
+        border: 2px solid var(--color-draw2-lighter);
+        border-radius: 50%;
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        & h2 {
+            align-self: center;
+            font-size: 4rem;
+            color: white;
+            font-weight: bolder;
+        }
+        & h3 {
+            font-size: 2.5rem;
+            color: var(--color-draw-link);
+            text-align: center;
+            opacity: 0;
+            animation: appear 500ms 1 forwards;
+            animation-delay: 2500ms;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../../sass/variables";
+
+.game-table {
+    background-color: rgb(224, 224, 224);
+}
+
+.names {
+    width: 100%;
+    margin: auto;
+    padding: 4rem;
+    background-image: linear-gradient(#b53c3c, #26b542);
+    background-image: linear-gradient(90deg, #aa5a5a 50%, #6ed182 50%);
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    @media screen and (max-width: $tablet-sm) {
+        font-size: 1.5rem;
+    }
+    &__player1 {
+        color: #b53c3c;
+        border: 2px solid #b53c3c;
+        padding: 0.8rem 2.5rem;
+        background-color: white;
+    }
+    &__player2 {
+        color: #26b542;
+        border: 2px solid #26b542;
+        padding: 0.8rem 2.5rem;
+        background-color: white;
+    }
+}

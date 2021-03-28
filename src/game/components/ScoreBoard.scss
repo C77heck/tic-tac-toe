@@ -1,0 +1,33 @@
+@import "../../sass/variables";
+.score-board {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--color-border-light);
+    border-radius: 0.5rem;
+    & header {
+        display: flex;
+        background-color: rgb(122, 162, 196);
+        color: var(--color-text-darker);
+        & div {
+            flex-basis: 50%;
+            border: 2px solid var(--color-border-light);
+            padding: 1rem 0.5rem;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(77, 214, 134);
+        color: var(--color-text-darker);
+    }
+
+    &__player {
+        display: flex;
+        & div {
+            flex-basis: 50%;
+            border: 2px solid var(--color-border-light);
+            padding: 1rem 0.5rem;
+        }
+    }
+}
